@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+body {
+  @apply font-sans antialiased text-white;
+  background: radial-gradient(circle at top, #0f172a 0%, #020617 100%);
+  min-height: 100vh;
+}
+
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-white/30 focus:ring-1 focus:ring-white/30 outline-none transition-all placeholder:text-gray-500 text-white;
+}
+
+.btn-primary {
+  @apply w-full py-3 px-4 rounded-lg bg-white text-black font-semibold hover:bg-gray-200 transition-colors shadow-lg active:scale-[0.98];
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
